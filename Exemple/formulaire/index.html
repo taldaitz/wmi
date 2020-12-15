@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Contact</h1>
+
+    <form action="reception.html" method="POST">
+
+        <p>
+            <label>Nom : </label>
+            <input name="nom" type="text" placeholder="Saisir votre nom">
+        </p>
+
+        <p>
+            <label>Prénom : </label>
+            <input name="prenom" type="text">
+        </p>
+
+        <p>
+            <label>Pays : </label>
+            <select>
+                <option>France</option>
+                <option>Allemagne</option>
+                <option>Espagne</option>
+                <option>Belgique</option>
+                <option>Italie</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Profession : </label>
+            <input name="job" type="text" list="listeProfession">
+
+            <datalist id="listeProfession">
+                <option>Formateur</option>
+                <option>Plombier</option>
+                <option>Docteur</option>
+                <option>Pompier</option>
+                <option>Policier</option>
+            </datalist>
+
+        </p>
+
+        <p>
+            <input type="submit" value="Valider">
+        </p>
+
+    </form>
+</body>
+</html>
