@@ -1,0 +1,23 @@
+div, span {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+div {
+    background-color: burlywood;
+    display: inline-block;
+}
+
+span {
+    background-color: cadetblue;
+    display: inline-block;
+}
+
+#div3 {
+    background-color: chocolate;
+    position: absolute;
+    right: 10px;
+    top : 10px;
+}

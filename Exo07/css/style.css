@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+#bleu {
+    background-color: cornflowerblue;
+    position: relative;
+}
+#orange {
+    background-color: orange;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+}
+#vert {
+    background-color: green;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+#violet {
+    background-color: purple;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}

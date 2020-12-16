@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    
+    <h1>Formulaire d'inscription</h1>
+
+
+    <form action="reception.html" method="POST">
+
+        <fieldset>
+            <legend>Identité</legend>
+
+            <p>
+                <label>Nom :</label>
+                <input type="text" name="nom" required placeholder="Saisir votre nom">
+            </p>
+
+            <p>
+                <label>Prénom :</label>
+                <input type="text" name="prenom" required placeholder="Saisir votre prénom">
+            </p>
+
+            
+            <p>
+                <label>Email :</label>
+                <input type="email" name="email" required>
+            </p>
+
+            
+            <p>
+                <label>Ville :</label>
+                <input type="text" name="ville" list="listeVille">
+
+                <datalist id="listeVille">
+                    <option>Paris</option>
+                    <option>Lyon</option>
+                    <option>Nantes</option>
+                    <option>Lille</option>
+                    <option>Bordeaux</option>
+                    <option>Toulouse</option>
+                </datalist>
+            </p>
+
+            <p>
+                <label>Langue Maternelle : </label>
+                <select name="langue">
+                    <option>Français</option>
+                    <option>Anglais</option>
+                    <option>Espagnol</option>
+                    <option>Japonais</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Civilité : </label>
+                <input type="radio" name="civilite" value="Mr"><label>Mr</label>
+                <input type="radio" name="civilite" value="Mme"><label>Mme</label>
+                <input type="radio" name="civilite" value="Dr"><label>Dr</label>
+            </p>
+
+            <p>
+                <label>Date de naissance</label>
+                <input type="date" name="dateNaissance">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Securité</legend>
+
+            <p>
+                <label>Login :</label>
+                <input type="text" name="login" required>
+            </p>
+
+            <p>
+                <label>Mot de passe :</label>
+                <input type="password" name="mdp" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Centre d'interets</legend>
+
+            <p>
+                <label>Commentaires :</label>
+                <textarea name="commentaires" cols="100" rows="10"></textarea>
+            </p>
+
+            <p>
+                <label>Loisirs : </label><br>
+
+                <input type="checkbox" name="loisirs" value="cinema"> Cinéma <br>
+                <input type="checkbox" name="loisirs" value="musique"> Musique <br>
+                <input type="checkbox" name="loisirs" value="sport"> Sport <br>
+                <input type="checkbox" name="loisirs" value="litterature"> Littérature <br>
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Envoyer">
+    </form>
+
+</body>
+</html>

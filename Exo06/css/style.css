@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro&display=swap');
+
+h1 {
+    color: red;
+    background-color: goldenrod;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 38pt;
+    text-align: center;
+}
+
+header {
+    border: 2px solid black;
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+cite {
+    color:green;
+}
+
+a {
+    color: black;
+}
+
+#lienAccueil {
+    font-weight: bold;
+}
+
+h2 {
+    color: blue;
+}
+
+.gris {
+    color: #ff0000;
+}
+
+.orangeBack {
+    background-color: orange;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px;
+}
+
+
+footer a {
+    color: green;
+}
+
+ul {
+
+    list-style-type: none;
+
+}
+
+ul a:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+section img:hover {
+    width: 600px;
+} 
