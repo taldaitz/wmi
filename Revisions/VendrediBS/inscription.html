@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="container bg-light">
+        <div class="row p-5">
+            <h1 class="col-12 display-1">Formulaire d'inscription</h1>
+            <hr>
+            <p class="lead">Pour s'inscrire</p>
+        </div>
+    </header>
+
+
+    <form action="reception.html" method="POST" class="container">
+
+        <fieldset class="row">
+            <legend>Identité</legend>
+
+            <p class="form-group col-lg-6">
+                <label>Nom :</label>
+                <input class="form-control" type="text" name="nom" required placeholder="Saisir votre nom">
+            </p>
+
+            <p class="form-group col-lg-6">
+                <label>Prénom :</label>
+                <input class="form-control" type="text" name="prenom" required placeholder="Saisir votre prénom">
+            </p>
+
+            
+            <p class="form-group col-lg-6">
+                <label>Email :</label>
+                <input class="form-control" type="email" name="email" required>
+            </p>
+
+            
+            <p class="form-group col-lg-6">
+                <label>Ville :</label>
+                <input class="form-control" type="text" name="ville" list="listeVille">
+
+                <datalist id="listeVille">
+                    <option>Paris</option>
+                    <option>Lyon</option>
+                    <option>Nantes</option>
+                    <option>Lille</option>
+                    <option>Bordeaux</option>
+                    <option>Toulouse</option>
+                </datalist>
+            </p>
+
+            <p class="form-group col-lg-6">
+                <label>Langue Maternelle : </label>
+                <select class="form-control" name="langue">
+                    <option>Français</option>
+                    <option>Anglais</option>
+                    <option>Espagnol</option>
+                    <option>Japonais</option>
+                </select>
+            </p>
+
+            <p class="form-group col-lg-6">
+                <label>Date de naissance</label>
+                <input class="form-control" type="date" name="dateNaissance">
+            </p>    
+
+            <p class="form-group col-lg-12">
+                <label>Civilité : </label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="civilite" value="Mr">
+                    <label class="form-check-label">Mr</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="civilite" value="Mme">
+                    <label class="form-check-label">Mme</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="civilite" value="Dr">
+                    <label class="form-check-label">Dr</label>
+                </div>
+            </p>
+
+            
+
+        </fieldset>
+
+        <fieldset class="row">
+            <legend>Securité</legend>
+
+            <p class="form-group col-lg-6">
+                <label>Login :</label>
+                <input class="form-control" type="text" name="login" required>
+            </p>
+
+            <p class="form-group col-lg-6">
+                <label>Mot de passe :</label>
+                <input class="form-control" type="password" name="mdp" required>
+            </p>
+        </fieldset>
+
+        <fieldset class="row">
+            <legend>Centre d'interets</legend>
+
+            <p class="form-group col-lg-6">
+                <label>Commentaires :</label>
+                <textarea class="form-control" name="commentaires" cols="100" rows="10"></textarea>
+            </p>
+
+            <p class="form-group col-lg-6">
+                <label>Loisirs : </label><br>
+
+                <input type="checkbox" name="loisirs" value="cinema"> Cinéma <br>
+                <input type="checkbox" name="loisirs" value="musique"> Musique <br>
+                <input type="checkbox" name="loisirs" value="sport"> Sport <br>
+                <input type="checkbox" name="loisirs" value="litterature"> Littérature <br>
+            </p>
+        </fieldset>
+        <br>
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Envoyer">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<title>Layout Media Queries</title>
+<meta charset="utf-8"> 
+
+<style>
+
+/* Styles généraux */
+body {
+	font-family:Sans-serif;
+	font-size:100%;
+	background:#F1F1F1;
+}
+a {
+	color:#369;
+}
+p {
+  padding:10px;
+  text-align:justify;
+  margin:10px 0;
+}
+p.mention {
+	margin: 1em;
+	color:#666;
+	clear:both;
+	padding-top:2em;
+}
+p img {
+  display:block;
+  margin: 0 auto;
+  width: 80%;
+}
+h1 {
+	padding:0;
+	color:#ccc;
+	text-shadow:1px 1px 1px #aaa;
+	margin-bottom:0;
+	margin:1em;
+  text-shadow:10px 10px 4px #f0F;
+}
+
+h1:after {
+  content:"(Normal size)";
+}
+h2 {
+	background:#B2D33A;
+	color:#fff;
+	margin:0;
+	padding:4px;
+}
+#menu li, #menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+#menu a {
+	display:block;
+	background:#444;
+	color:#fff;
+	border-bottom:1px;
+	text-decoration:none;
+	line-height:200%;
+	padding-left:1em;
+}
+#menu a:hover {
+	background:#222;
+}
+
+/* Disposition par défaut */
+
+#main, #aside {
+	float:left;
+	background:#fff;
+	min-height:300px;
+	overflow:auto;
+}
+#menu {
+	float:left;
+	width:30%;
+}
+#main {
+	width:70%;
+}
+#aside {
+	width:100%;
+	clear:both;
+}
+
+
+/* max-width pour faibles résolutions */
+@media screen and (max-width: 480px) {
+	#main, #aside, #menu {
+		clear:both;
+		width:100%;
+		margin-bottom:10px;
+	}
+	body {
+	  margin:0;
+	}
+	p {
+	  margin:0;
+	  font-size:90%;
+	}
+	p img {
+  display:block;
+  width: 100%;
+  }
+  h1 {
+	  text-shadow:5px 5px 2px #ff0;
+	  font-size : 120%;
+	}
+  h1:after {
+    content:"(Mobile size)";
+  }
+  h2 {
+	  font-size:110%;
+	}
+}
+
+
+/* min-width 1000px pour écrans plus larges */
+@media screen and (min-width: 1000px) {
+	#menu {
+		width:20%;
+	}
+	#main {
+		width:50%;
+	}
+	#aside {
+		clear:none;
+		width:30%;
+	}
+	p {
+	  margin:15px 0;
+	  line-height:140%;
+	}
+  h1 {
+	  text-shadow:15px 15px 6px #f00;
+	}
+	h1:after {
+	  content:"(Wide size)";
+	}
+}
+
+</style>
+</head>
+
+<body>
+
+	<h1>Démo Media Queries</h1>
+
+	<div id="menu">
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="#">Lien 1</a></li>
+			<li><a href="#">Lien 2</a></li>
+			<li><a href="#">Lien 3</a></li>
+
+			<li><a href="#">Lien 4</a></li>
+			<li><a href="#">Lien 5</a></li>
+		</ul>
+	</div>
+	
+	<div id="main">
+		<h2>Zone principale</h2>
+<p>Lorem ipsum dolor sit amet consectetuer a malesuada eu mattis ut. Nulla netus ac et gravida tincidunt Lorem euismod amet turpis consequat. Leo Sed Vestibulum interdum at ligula sed ut venenatis lacinia sed. Pellentesque montes ornare ac consequat Sed ullamcorper consectetuer et scelerisque feugiat. Interdum ligula vel tellus.</p>
+<p>Vel dui mus lorem justo tincidunt tempor eget Nunc turpis habitasse. Rutrum rhoncus amet egestas neque consectetuer ut pellentesque et porta Vivamus. Nibh et dolor elit Morbi congue congue wisi auctor sit interdum. Justo Nulla nulla urna in Vestibulum at sed gravida et laoreet. Ut Sed venenatis sed Curabitur consequat hac nisl a pharetra pharetra. Ac nibh Integer convallis nibh tincidunt tincidunt pretium eros risus.</p>
+<p><img src="img_pulpit.jpg"  alt="la falaise" /></p>
+<p>Adipiscing pede laoreet egestas tellus Nam porttitor nibh netus urna turpis. Enim id est Pellentesque ut Phasellus tempor eu dignissim justo lorem. Semper sagittis metus a lobortis Vivamus commodo purus Nulla suscipit Aenean. Est Integer est id id In turpis Pellentesque Nulla pede porttitor. A cursus.</p>
+<p>Vivamus senectus convallis Vivamus facilisis Donec ut ipsum Vestibulum semper orci. A laoreet tellus Nam dolor Curabitur magna consequat Nam euismod velit. Nascetur ac Nunc id mauris vitae at quis sed natoque amet. Vitae lacinia in ipsum Aenean.</p>
+	</div>
+
+	<div id="aside">
+		<h2>Zone annexe</h2>
+		<p>...</p>
+	</div>
+
+</body>
+</html>
