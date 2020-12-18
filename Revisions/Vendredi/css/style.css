@@ -1,0 +1,53 @@
+h1 {
+    border: 5px black solid;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40pt;
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav ul {
+    font-size: 20pt;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: black;
+    text-decoration: unset;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    width: 800px;
+    margin: 40px 100px;
+}
+
+
+@media screen and (max-width: 930px) {
+    nav li {
+        display: block;
+    }
+
+    nav ul {
+        text-align: unset;
+    }
+
+    p {
+        width: unset;
+        margin: 20px 30px;
+    }
+}
